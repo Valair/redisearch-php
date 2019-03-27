@@ -23,7 +23,7 @@
     "require": {
         "php": ">=7",
         "psr/log": "^1.0",
-        "ethanhann/redis-raw": "^0.3"
+        "ethanhann/redis-raw": "dev-develop"
     },
     "require-dev": {
         "ukko/phpredis-phpdoc": "^2.2@dev",
@@ -34,5 +34,11 @@
         "consolidation/robo": "^1.0",
         "monolog/monolog": "^1.23",
         "cheprasov/php-redis-client": "^1.8"
-    }
+    },
+    "repositories": [
+        {
+            "type":"git",
+            "url": "https://github.com/Valair/redis-raw-php.git"
+        }
+    ]
 }

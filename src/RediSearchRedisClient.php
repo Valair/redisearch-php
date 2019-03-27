@@ -46,9 +46,9 @@ class RediSearchRedisClient implements RedisRawClientInterface
         throw new RediSearchException($payload);
     }
 
-    public function connect($hostname = '127.0.0.1', $port = 6379, $db = 0, $password = null): RedisRawClientInterface
+    public function connect($hostnames = '127.0.0.1', int $port = 6379, int $db = 0, string $password = null, array $options = null): RedisRawClientInterface
     {
-        $this->redis->connect($hostname, $port, $db, $password);
+        $this->redis->connect($hostnames, $port, $db, $password, $options);
     }
 
     public function flushAll()
